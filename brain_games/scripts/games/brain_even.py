@@ -1,5 +1,9 @@
-import random
+#!/usr/bin/env python3
+
 import prompt
+from brain_games.scripts import testing
+import random
+
 
 def main():
     print('Welcome to the Brain Games!')
@@ -9,22 +13,17 @@ def main():
     count = 0
     while count < 3:
         random_number = random.randint(0, 100)
-        answer = prompt.string(f'Question: {random_number}\nYour answer: ')
-        correct_answer = ''
         if random_number % 2 == 0:
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        if answer == correct_answer:
-            print('Correct!')
+            result = testing.test(random_number, correct_answer, name)
+            if result != correct_answer:
+                break
             count += 1
-        else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
-            print(f"Let's try again, {name}!")
-            break
-    if count == 3:
-        print(f'Congratulations, {name}!')
+            if count == 3:
+                print(f'Congratulations, {name}!')
+
 
 if __name__ == '__main__':
     main()
-
