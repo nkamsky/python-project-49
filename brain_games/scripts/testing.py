@@ -8,7 +8,7 @@ def test(expression, correct_answer, name):
         print('Correct!')
         return answer
     else:
-        print(f'{answer} is wrong answer ;(.\
- Correct answer was {correct_answer}.')
+        print(f'\'{answer}\' is wrong answer ;(.\
+ Correct answer was \'{correct_answer}\'.')
         print(f'Let\'s try again, {name}')
         return answer
