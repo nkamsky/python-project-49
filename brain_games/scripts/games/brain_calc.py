@@ -17,12 +17,8 @@ def main():
         number_2 = random.randint(1, 100)
         expression = str(number_1) + operator + str(number_2)
         correct_answer = str(eval(str(number_1) + operator + str(number_2)))
-        result = testing.test(expression, correct_answer, name)
-        if result != correct_answer:
-            break
-        count += 1
-        if count == 3:
-            print(f'Congratulations, {name}!')
+        count += testing.test(expression, correct_answer)
+    print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}')
 
 
 if __name__ == '__main__':
