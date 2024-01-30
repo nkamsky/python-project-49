@@ -13,16 +13,9 @@ def main():
     count = 0
     while count < 3:
         random_number = random.randint(0, 100)
-        if random_number % 2 == 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
-            result = testing.test(random_number, correct_answer, name)
-            if result != correct_answer:
-                break
-            count += 1
-            if count == 3:
-                print(f'Congratulations, {name}!')
+        correct_answer = 'yes' if random_number % 2 == 0 else 'no'
+        count += testing.test(random_number, correct_answer)
+        print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}')
 
 
 if __name__ == '__main__':

@@ -27,12 +27,8 @@ def main():
             if number in gd_2:
                 correct_answer = str(number)
                 break
-        result = testing.test(expression, correct_answer, name)
-        if result != correct_answer:
-            break
-        count += 1
-        if count == 3:
-            print(f'Congratulations, {name}!')
+        count += testing.test(expression, correct_answer)
+        print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}')
 
 
 if __name__ == '__main__':
