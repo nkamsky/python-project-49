@@ -19,7 +19,7 @@ def main():
         correct_answer = str(progression[index])
         progression[index] = '..'
         count += testing.test(progression, correct_answer)
-        print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}')
+        print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}!')
 
 
 if __name__ == '__main__':

@@ -20,7 +20,7 @@ def main():
                     correct_answer = str(n)
                     break
         count += testing.test(expression, correct_answer)
-    print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}')
+    print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}!')
 
 
 if __name__ == '__main__':

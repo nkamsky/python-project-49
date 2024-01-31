@@ -18,7 +18,7 @@ def main():
         expression = str(number_1) + operator + str(number_2)
         correct_answer = str(eval(str(number_1) + operator + str(number_2)))
         count += testing.test(expression, correct_answer)
-    print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}')
+    print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}!')
 
 
 if __name__ == '__main__':
