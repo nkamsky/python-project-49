@@ -20,7 +20,8 @@ def main():
                     i += 1
             correct_answer = 'no' if i > 2 else 'yes'
         count += testing.test(number, correct_answer)
-    print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}!')
+    print(f'Congratulations, {name}!') if count == 3 \
+        else print(f'Let\'s try again, {name}!')
 
 
 if __name__ == '__main__':
