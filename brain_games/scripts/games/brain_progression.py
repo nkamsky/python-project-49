@@ -18,8 +18,9 @@ def main():
         index = random.randint(1, len(progression) - 1)
         correct_answer = str(progression[index])
         progression[index] = '..'
+        progression = ' '.join(list(map(str, progression)))
         count += testing.test(progression, correct_answer)
-        print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}!')
+    print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}!')
 
 
 if __name__ == '__main__':
