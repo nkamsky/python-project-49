@@ -15,7 +15,7 @@ def main():
         random_number = random.randint(0, 100)
         correct_answer = 'yes' if random_number % 2 == 0 else 'no'
         count += testing.test(random_number, correct_answer)
-        print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}')
+    print(f'Congratulations, {name}!') if count == 3 else print(f'Let\'s try again, {name}')
 
 
 if __name__ == '__main__':
