@@ -1,5 +1,4 @@
 import prompt
-from brain_games.scripts import greetings
 
 
 def test(expression, correct_answer, count, name):
