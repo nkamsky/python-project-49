@@ -1,15 +1,11 @@
 import random
-import prompt
 from brain_games.scripts import testing
+from brain_games.scripts import greetings
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('What number is missing in the progression?')
-    count = 0
-    while count < 3:
+
+    def cycle(count):
         first_number = random.randint(1, 100)
         interval = random.randint(1, 10)
         progression = [first_number]
@@ -19,9 +15,13 @@ def main():
         correct_answer = str(progression[index])
         progression[index] = '..'
         progression = ' '.join(list(map(str, progression)))
-        count += testing.test(progression, correct_answer)
-    print(f'Congratulations, {name}!') if count == 3 \
-        else print(f'Let\'s try again, {name}!')
+        result = testing.test(progression, correct_answer, count, name)
+        if result:
+            cycle(count - 1)
+
+    name = greetings.greeting()
+    print('What number is missing in the progression?')
+    cycle(3)
 
 
 if __name__ == '__main__':
