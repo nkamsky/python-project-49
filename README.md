@@ -13,7 +13,7 @@
 
 Пример:
 
-[![asciicast](https://asciinema.org/a/635522.svg)](https://asciinema.org/a/635522)
+[![asciicast](https://asciinema.org/a/634402.svg)](https://asciinema.org/a/634402)
     
 ## Условия победы в игре:
 При верном ответе пользователем игра продолжается, при неверном - завершается.
