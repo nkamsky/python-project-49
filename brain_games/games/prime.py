@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-
 import random
-from brain_games.games import testing
-from brain_games.games import greetings
 
 
 def is_prime(n):
@@ -14,14 +10,8 @@ def is_prime(n):
     return d * d > n
 
 
-def prime_test(count):
+def prime_test():
     number = random.randint(1, 100)
     prime = is_prime(number)
-    correct_answer = 'yes' if prime else 'no'
-    result = testing.test(number, correct_answer, count, name)
-    if result:
-        prime_test(count - 1)
-
-
-name = greetings.greeting()
-print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    result = 'yes' if prime else 'no'
+    return number, result

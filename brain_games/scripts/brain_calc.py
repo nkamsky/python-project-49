@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
-from brain_games.games import calc
+from brain_games.games.calc import calculation_test
+from brain_games.games.gameplay import game_process
+
+question = 'What is the result of the expression?'
 
 
 def main():
-    calc.calculation_test(3)
+    game_process(calculation_test, question)
 
 
 if __name__ == '__main__':
