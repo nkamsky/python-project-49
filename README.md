@@ -21,14 +21,9 @@
 
 ## Установка:
     pip install git+https://github.com/nkamsky/python-project-49.git
-    
-<<<<<<< Updated upstream
-## Системные требования:
-ОС семейства Linux
-Интерпретатор Python 3.10.12
-=======
+
 # Системные требования:
 * ОС семейства Linux
 * Интерпретатор Python 3.10.12
->>>>>>> Stashed changes
+
     
