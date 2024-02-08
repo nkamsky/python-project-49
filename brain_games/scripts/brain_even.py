@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
-
-from brain_games.games.even import even_test
-from brain_games.games.gameplay import game_process
-
-question = 'Answer "yes" if the number is even, otherwise answer "no".'
+from brain_games.games import even
+from brain_games.gameplay import game_process
 
 
 def main():
-    game_process(even_test, question)
+    game_process(even)
 
 
 if __name__ == '__main__':

@@ -1,8 +1,10 @@
 import random
 import math
 
+question = 'Find the greatest common divisor of given numbers.'
 
-def gcd_test():
+
+def test():
     number_1 = random.randint(1, 100)
     number_2 = random.randint(1, 100)
     two_numbers = f'{number_1} {number_2}'

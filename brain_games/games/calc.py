@@ -1,13 +1,15 @@
 import random
 
+question = 'What is the result of the expression?'
 
-def calculation_test():
-    operator = random.choice((' + ', ' - ', ' * '))
+
+def test():
+    operator = random.choice('+-*')
     number1, number2 = random.randint(1, 10), random.randint(1, 10)
-    if operator == ' + ':
+    if operator == '+':
         result = str(number1 + number2)
         expression = f'{number1} + {number2}'
-    elif operator == ' - ':
+    elif operator == '-':
         result = str(number1 - number2)
         expression = f'{number1} - {number2}'
     else:

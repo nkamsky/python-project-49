@@ -1,7 +1,9 @@
 import random
 
+question = 'What number is missing in the progression?'
 
-def find_num_in_progression():
+
+def test():
     start = random.randint(1, 100)
     step = random.randint(1, 10)
     num_of_elements = random.randint(5, 10)

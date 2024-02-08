@@ -1,17 +1,19 @@
 import random
 
-
-def is_prime(n):
-    if n % 2 == 0:
-        return n == 2
-    d = 3
-    while d * d <= n and n % d != 0:
-        d += 2
-    return d * d > n
+question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def prime_test():
+def is_prime(x):
+    if x < 2:
+        return False
+    else:
+        for n in range(2, x):
+            if x % n == 0:
+                return False
+        return True
+
+
+def test():
     number = random.randint(1, 100)
-    prime = is_prime(number)
-    result = 'yes' if prime else 'no'
+    result = 'yes' if is_prime(number) else 'no'
     return number, result
