@@ -1,9 +1,10 @@
 import random
+from brain_games import constants
 
-question = 'What number is missing in the progression?'
+question = constants.PROGRESSION_INSTRUCTION
 
 
-def test():
+def get_task_and_result():
     start = random.randint(1, 100)
     step = random.randint(1, 10)
     num_of_elements = random.randint(5, 10)

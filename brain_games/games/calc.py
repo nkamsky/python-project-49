@@ -1,9 +1,10 @@
 import random
+from brain_games import constants
 
-question = 'What is the result of the expression?'
+question = constants.CALC_INSTRUCTION
 
 
-def test():
+def get_task_and_result():
     operator = random.choice('+-*')
     number1, number2 = random.randint(1, 10), random.randint(1, 10)
     if operator == '+':
