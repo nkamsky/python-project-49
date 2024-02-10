@@ -1,8 +1,8 @@
 import random
 import math
-from brain_games import constants
 
-question = constants.PRIME_INSTRUCTION
+INSTRUCTION = ('Answer "yes" if given number is prime. '
+               'Otherwise answer "no".')
 
 
 def is_prime(x):

@@ -1,8 +1,7 @@
 import random
 import math
-from brain_games import constants
 
-question = constants.GCD_INSTRUCTION
+INSTRUCTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_task_and_result():

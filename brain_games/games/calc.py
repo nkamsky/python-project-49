@@ -1,7 +1,6 @@
 import random
-from brain_games import constants
 
-question = constants.CALC_INSTRUCTION
+INSTRUCTION = 'What is the result of the expression?'
 
 
 def get_task_and_result():

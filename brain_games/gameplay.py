@@ -1,13 +1,14 @@
 import prompt
-from brain_games import constants
+
+ROUNDS_COUNT = 3
 
 
 def game_process(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(game.question)
-    for _ in range(constants.REPEAT_CORRECT_ANSWER):
+    print(game.INSTRUCTION)
+    for _ in range(ROUNDS_COUNT):
         task, correct_answer = game.get_task_and_result()
         print(f'Question: {task}')
         answer = prompt.string('Your answer: ')

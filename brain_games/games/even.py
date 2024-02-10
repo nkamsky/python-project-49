@@ -1,7 +1,6 @@
 import random
-from brain_games import constants
 
-question = constants.EVEN_INSTRUCTION
+INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_task_and_result():

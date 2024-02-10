@@ -1,7 +1,6 @@
 import random
-from brain_games import constants
 
-question = constants.PROGRESSION_INSTRUCTION
+INSTRUCTION = 'What number is missing in the progression?'
 
 
 def get_task_and_result():
